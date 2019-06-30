@@ -18,10 +18,14 @@ add.addEventListener("click", () => {
 });
 
 bin.addEventListener("click", event => {
+  var removalArray = [];
   taskList.childNodes.forEach((task, index) => {
-    if (task.classList.contains("striked") != -1) {
-      taskList.removeChild(taskList.childNodes[index]);
+    if (task.classList.contains("striked")) {
+      removalArray.push(taskList.childNodes[index]);
     }
+  });
+  removalArray.forEach(task => {
+    taskList.removeChild(task);
   });
 });
 
@@ -31,7 +35,11 @@ var addNewTask = taskString => {
   node.appendChild(text);
   node.addEventListener("click", event => {
     var targetTask = event.target;
-    targetTask.classList.add("striked");
+    if (targetTask.classList.contains("striked")) {
+      targetTask.classList.remove("striked");
+    } else {
+      targetTask.classList.add("striked");
+    }
   });
   taskList.appendChild(node);
   inputNode.value = "";

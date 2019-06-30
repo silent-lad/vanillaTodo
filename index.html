@@ -8,10 +8,16 @@
     <title>Document</title>
   </head>
   <body>
-    <input id="taskInput" type="text" />
-    <ul id="taskList"></ul>
-    <button id="addButton">Add Task</button>
-    <button id="deleteButton">Bin</button>
+    <div class="todoList">
+      <h1 class="heading">All Tasks</h1>
+      <input id="taskInput" type="text" />
+      <div class="list">
+        <ul id="taskList"></ul>
+      </div>
+      <div class="actionButtons" id="addButton">+</div>
+      <div class="actionButtons" id="deleteButton">-</div>
+    </div>
+
     <script src="main.js"></script>
   </body>
 </html>

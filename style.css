@@ -1,3 +1,103 @@
+@import url("https://fonts.googleapis.com/css?family=Roboto&display=swap");
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+  outline: none;
+}
+
 .striked {
   text-decoration: line-through;
+  color: #bebebe;
+  font-weight: 400 !important;
+  box-shadow: 0px 2px 5px #91919177;
+}
+
+html {
+  background: radial-gradient(#5bc4f6, #3b87ed);
+  background-repeat: no-repeat;
+  height: 100vh;
+  width: 100vw;
+  font-family: "Roboto", sans-serif;
+}
+input {
+  line-height: 20;
+  height: 40px;
+  border: 1px solid #11738b28;
+  font-size: 20px;
+  color: #272727;
+  padding: 0px 10px;
+  border-radius: 5px;
+  box-shadow: 0px 5px 15px #11738b56;
+  width: 90%;
+  margin-bottom: 30px;
+}
+input:focus {
+  box-shadow: 0px 3px 10px #11738b6e;
+}
+.todoList {
+  height: 60vh;
+  width: 350px;
+  border-radius: 5px;
+  margin: 0 auto;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  box-shadow: 0px 20px 35px #11738bcb;
+  padding: 20px;
+  background: #fff;
+  text-align: center;
+}
+
+#addButton {
+  position: absolute;
+  left: 10%;
+  color: #007451;
+  background: #46d990;
+  border: 1px solid #46d994;
+  box-shadow: 0px 5px 15px #46d994;
+}
+
+.actionButtons {
+  bottom: -30px;
+  height: 60px;
+  width: 60px;
+  text-align: center;
+  border-radius: 50%;
+  font-size: 50px;
+}
+
+#deleteButton {
+  position: absolute;
+  right: 10%;
+  color: #3f0d00;
+  background: #b61b00;
+  border: 1px solid #b61b00;
+  box-shadow: 0px 5px 15px #b61b00a1;
+}
+
+.heading {
+  font-weight: 300 !important;
+  color: #4d4d4d;
+  font-size: 25px;
+}
+
+ul {
+  padding: 0;
+}
+
+li {
+  text-align: left;
+  padding: 5px 25px;
+  margin: 10px 0px;
+  list-style: none;
+  height: 40px;
+  border: 0.5px solid #eaeaea;
+  font-size: 20px;
+  color: #272727;
+  border-radius: 25px;
+  line-height: 40px;
+  box-shadow: 0px 5px 15px #91919177;
 }
