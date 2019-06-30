@@ -117,3 +117,25 @@ li {
   box-shadow: 0px 5px 15px #91919177;
   transition: all 0.3s linear;
 }
+
+@media screen and (max-width: 500px) {
+  .todoList {
+    width: 250px;
+  }
+  input {
+    height: 70px;
+    margin-bottom: 20px;
+    font-size: 20px;
+  }
+  ul {
+    margin-top: 120px !important;
+  }
+  .actionButtons {
+    bottom: -30px;
+    height: 60px;
+    width: 60px;
+    text-align: center;
+    border-radius: 50%;
+    font-size: 50px;
+  }
+}
