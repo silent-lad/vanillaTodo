@@ -22,24 +22,33 @@ html {
   font-family: "Roboto", sans-serif;
 }
 input {
+  position: absolute;
+  top: 40px;
+  left: -7%;
+  text-align: center;
   line-height: 20;
-  height: 40px;
+  height: 100px;
+  width: 110%;
   border: 1px solid #11738b28;
-  font-size: 20px;
-  color: #272727;
+  font-size: 30px;
+  color: #ffffff;
   padding: 0px 10px;
-  border-radius: 5px;
-  box-shadow: 0px 5px 15px #11738b56;
-  width: 90%;
+  border-radius: 20px;
+  box-shadow: 0px 20px 20px #0b84d494;
   margin-bottom: 30px;
+  transition: all 0.3s linear;
+  background: #0b84d4b4;
 }
 input:focus {
-  box-shadow: 0px 3px 10px #11738b6e;
+  box-shadow: 0px 3px 10px #0b84d494;
+}
+input::-webkit-input-placeholder {
+  color: rgba(255, 255, 255, 0.767);
 }
 .todoList {
   height: 60vh;
   width: 350px;
-  border-radius: 5px;
+  border-radius: 40px;
   margin: 0 auto;
   position: absolute;
   top: 50%;
@@ -53,7 +62,7 @@ input:focus {
 
 #addButton {
   position: absolute;
-  left: 10%;
+  left: 20%;
   color: #007451;
   background: #46d990;
   border: 1px solid #46d994;
@@ -61,17 +70,17 @@ input:focus {
 }
 
 .actionButtons {
-  bottom: -30px;
-  height: 60px;
-  width: 60px;
+  bottom: -35px;
+  height: 70px;
+  width: 70px;
   text-align: center;
   border-radius: 50%;
-  font-size: 50px;
+  font-size: 60px;
 }
 
 #deleteButton {
   position: absolute;
-  right: 10%;
+  right: 20%;
   color: #3f0d00;
   background: #b61b00;
   border: 1px solid #b61b00;
@@ -85,7 +94,13 @@ input:focus {
 }
 
 ul {
+  margin-top: 150px;
   padding: 0;
+  height: 250px;
+  overflow: hidden;
+  overflow-y: scroll;
+  overflow-x: auto;
+  padding: 0px 10px;
 }
 
 li {
@@ -100,4 +115,5 @@ li {
   border-radius: 25px;
   line-height: 40px;
   box-shadow: 0px 5px 15px #91919177;
+  transition: all 0.3s linear;
 }
