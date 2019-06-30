@@ -9,7 +9,7 @@ A sleepless night made me try some new UI and a take a break from JS frameworks.
 ![UI brush-up](./snap2.png)
 
 <img src="./snap4.png" style="width:49%">
-<img src="./snap3.png" style="width:50%">
+<img src="./snap3.png" style="width:49%">
 
 # Mark 1
 
