@@ -66,7 +66,11 @@ input::-webkit-input-placeholder {
   color: #007451;
   background: #46d990;
   border: 1px solid #46d994;
-  box-shadow: 0px 5px 15px #46d994;
+  box-shadow: 0px 10px 15px #46d994b9;
+}
+#addButton:active {
+  box-shadow: 0px 5px 15px #46d994b9;
+  background: #48dd92;
 }
 
 .actionButtons {
@@ -76,6 +80,7 @@ input::-webkit-input-placeholder {
   text-align: center;
   border-radius: 50%;
   font-size: 60px;
+  transition: all 0.1s linear;
 }
 
 #deleteButton {
@@ -84,7 +89,11 @@ input::-webkit-input-placeholder {
   color: #3f0d00;
   background: #b61b00;
   border: 1px solid #b61b00;
-  box-shadow: 0px 5px 15px #b61b00a1;
+  box-shadow: 0px 10px 15px #b61b00a1;
+}
+#deleteButton:active {
+  box-shadow: 0px 5px 5px #b61b00a1;
+  background: #ca1e00;
 }
 
 .heading {
