@@ -35,7 +35,7 @@ input {
   top: 40px;
   left: -7%;
   text-align: center;
-  line-height: 20;
+  /* line-height: 20; */
   height: 100px;
   width: 110%;
   border: 1px solid #11738b28;
