@@ -7,7 +7,3 @@ A sleepless night made me try some new UI and a take a break from JS frameworks.
 ## Mark 2
 
 ![UI brush-up](./snap2.png)
-
-# Mark 1
-
-![UI brush-up](./snap.png)
