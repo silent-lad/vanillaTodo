@@ -33,14 +33,15 @@ var addNewTask = taskString => {
   var node = document.createElement("LI");
   var text = document.createTextNode(taskString);
   node.appendChild(text);
-  node.addEventListener("click", event => {
-    var targetTask = event.target;
-    if (targetTask.classList.contains("striked")) {
-      targetTask.classList.remove("striked");
-    } else {
-      targetTask.classList.add("striked");
-    }
-  });
   taskList.appendChild(node);
   inputNode.value = "";
 };
+
+document.getElementById("taskList").addEventListener("click", event => {
+  var targetTask = event.target;
+  if (targetTask.classList.contains("striked")) {
+    targetTask.classList.remove("striked");
+  } else {
+    targetTask.classList.add("striked");
+  }
+});
