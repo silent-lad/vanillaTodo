@@ -39,9 +39,11 @@ var addNewTask = taskString => {
 
 document.getElementById("taskList").addEventListener("click", event => {
   var targetTask = event.target;
-  if (targetTask.classList.contains("striked")) {
-    targetTask.classList.remove("striked");
-  } else {
-    targetTask.classList.add("striked");
+  if (targetTask.nodeName == "LI") {
+    if (targetTask.classList.contains("striked")) {
+      targetTask.classList.remove("striked");
+    } else {
+      targetTask.classList.add("striked");
+    }
   }
 });
