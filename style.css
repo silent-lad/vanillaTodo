@@ -36,11 +36,11 @@ body {
 input {
   position: absolute;
   top: 40px;
-  left: -7%;
+  left: -40px;
+  margin: 0 auto;
   text-align: center;
-  /* line-height: 20; */
   height: 100px;
-  width: 110%;
+  width: 450px;
   border: 1px solid #11738b28;
   font-size: 30px;
   color: #ffffff;
@@ -144,6 +144,8 @@ li {
     width: 250px;
   }
   input {
+    left: -25px;
+    width: 320px;
     height: 70px;
     margin-bottom: 20px;
     font-size: 20px;
