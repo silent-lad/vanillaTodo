@@ -94,6 +94,9 @@ input::-webkit-input-placeholder {
   font-size: 60px;
   transition: all 0.1s linear;
 }
+.actionButtons:hover {
+  transform: scale(1.1);
+}
 
 #deleteButton {
   position: absolute;
